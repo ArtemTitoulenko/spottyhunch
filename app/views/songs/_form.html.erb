@@ -11,15 +11,6 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :track %><br />
-    <%= f.text_field :track %>
-  </div>
-  <div class="field">
-    <%= f.label :artist %><br />
-    <%= f.text_field :artist %>
-  </div>
-  <!-- <div class="actions">
-    <%= f.submit %>
-  </div> -->
+    <%= f.text_field :track, :placeholder => 'track' %>
+    <%= f.text_field :artist, :placeholder => 'artist' %>
 <% end %>

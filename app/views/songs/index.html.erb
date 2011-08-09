@@ -1,40 +1,40 @@
+
 <div id="songs_app">
-	<h1 id="logo">Spotify Playlist Generator</h1>
-	<div id="flash_space"></div>
-	<ol id="song_list">
-	</ol>
-  <%= render 'form' %>
+	<div class='row'>
+		<div class='sixteen columns'>
+			<h1 id="logo">Spotify Playlist Generator</h1>
+			<div id="flash_space"></div>
+		</div>
+	</div>
+	
+	<div class='row'>
+		<div class='four columns'>
+			<%= render 'form' %>
+		</div>
+		<div class='twelve columns'>
+			<ol id="song_list"></ol>
+		</div>
 </div>
 
-<script type="text/javascript">
-  $(document).ready(function(){
-  });
-</script>
-
 <script id="song_item" type="text/html">
-<div id='{{id}}'>
-	<div class='listTrackContent'>
-		<div class="content">
-			<div class="trackInfo clearfix">
-        <a class="trackName" href="{{trackUrl}}" target="_blank">{{track}} - {{artist}}</a>
-				<div class="icons">
-          <span class="delete">
-            <img src="images/delete.png"/>
-          </span>
-          <span class="expand">
-            <img src="images/expand.png"/>
-          </span>
-        </div>
-        <span class="genre">{{genre}}</span>
-        <div class="dragicon {{id}}">
-          <a class="uriTxt"></a>
-        </div>
-			</div>
-		</div>
-		<ol class="{{id}}">
-    </ol>
-    
-  </div>
+<div id='{{id}}' class='row'>
+	<div class='eight columns'>
+		<a href="#" class="button" style='font-size: 32px; line-height: 48px'><span class="icon-go expand">{{track}} - {{artist}}</span></a>
+	</div>
+	<div class='two columns'>
+    <div class="dragicon {{id}}">
+      <a class="uriTxt"></a>
+    </div>
+	</div>
+	<div class="two columns"
+		<div class="icons">
+	    <span class="delete">
+	      <img src="images/delete.png"/>
+	    </span>
+	  </div>
+	</div>
+	<ol class="{{id}}">
+   </ol>
 </div>
 </script>
 

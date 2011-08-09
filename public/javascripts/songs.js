@@ -63,10 +63,10 @@ $(function(){
 		expand: function(){
 		  var expand = $(this.el).find(".expand");
 		  if (expand.hasClass("active")){
-		    expand.html("<img src='images/expand.png'/>");
+		    expand.css('background', "transparent url('images/expand.png') no-repeat");
 		  }
 		  else {
-		    expand.html("<img src='images/contract.png'/>");
+		    expand.css('background', "transparent url('images/contract.png') no-repeat");
 		  }
 		  expand.toggleClass("active");
 			var id = this.model.id;
@@ -74,7 +74,7 @@ $(function(){
 				$("ol."+id).slideToggle();		
 			}
 			else {
-			  expand.html("<img class='loading' src='images/24.gif'/>");
+			  expand.toggleClass('icon-go').toggleClass('icon-loading');
 				$.getJSON('/similar/'+this.model.id, function(data) {
             if(data && data.length > 0) {
               var songs = _(data).map(
@@ -104,7 +104,7 @@ $(function(){
                   }
                 });
               });
-              expand.html("<img src='images/contract.png'/>");
+              expand.css('background', "transparent url(images/contract.png') sprite-no-repeat");
             }
             else {
               new Error({ message: "Last.fm sucks." });

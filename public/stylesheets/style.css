@@ -1,4 +1,4 @@
-.clearfix:after {
+/*.clearfix:after {
  content: ".";
  display: block;
  height: 0;
@@ -11,10 +11,10 @@
 }
 
 body {
-	line-height: 1.45em;
-	margin: 0 auto;
-	background-color:#E6FFF1;
-	font: normal normal normal 1em/1.4 Cambria, Georgia, sans-serif;
+  line-height: 1.45em;
+  margin: 0 auto;
+  background-color:#E6FFF1;
+  font: normal normal normal 1em/1.4 Cambria, Georgia, sans-serif;
 }
 
 a:link, li a:visited {
@@ -42,7 +42,7 @@ input {
 }
 
 #songs_app {
-	position: relative;
+  position: relative;
 }
 
 .expand img.loading {
@@ -50,15 +50,16 @@ input {
 }
 
 h1#logo {  
-	text-align: center;
+  text-align: center;
 }
 
 #wrap {
   padding: 0 20px 20px 20px;
 }
 
+/
 ol#song_list, ol#song_list ol {
-	padding: 0;
+  padding: 0;
 }
 ol#song_list {
   list-style: none;
@@ -74,23 +75,23 @@ ol#song_list ol li {
 }
 
 ol#song_list li.track {
-	padding: 15px;
-	-webkit-box-shadow:white 0 1px 0px, rgba(0, 0, 0, 0.496094) 0 1px 3px 0 inset;
-	background-attachment:initial;
-	background-clip:initial;
-	background-color:rgba(0, 0, 0, 0.0351562);
-	ackground-image:initial;
-	background-origin:initial;
-	background-position:initial initial;
-	background-repeat:initial initial;
-	box-shadow:white 0 1px 0px, rgba(0, 0, 0, 0.496094) 0 1px 3px 0 inset;
-	margin-bottom: 5px;
-	border-radius: 3px;
+  padding: 15px;
+  -webkit-box-shadow:white 0 1px 0px, rgba(0, 0, 0, 0.496094) 0 1px 3px 0 inset;
+  background-attachment:initial;
+  background-clip:initial;
+  background-color:rgba(0, 0, 0, 0.0351562);
+  ackground-image:initial;
+  background-origin:initial;
+  background-position:initial initial;
+  background-repeat:initial initial;
+  box-shadow:white 0 1px 0px, rgba(0, 0, 0, 0.496094) 0 1px 3px 0 inset;
+  margin-bottom: 5px;
+  border-radius: 3px;
 }
 
 ol#song_list ol li {
-	margin-top: 10px;
-}
+  margin-top: 10px;
+}/*
 
 .listTrackContent ol li div.track a {
   font-weight: bold;
@@ -148,7 +149,7 @@ li div.icons {
   float: left;
   padding-top: 3px;
 }
-
+/*
 .dragicon {
   padding: 0 5px 0 0;
   display:none;
@@ -158,3 +159,4 @@ li div.icons {
   cursor: pointer;
   background: url("/images/spotify-32.png") no-repeat !important;
 }
+/**/
